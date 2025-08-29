@@ -44,25 +44,25 @@ export default function Home() {
         <div
           style={{
             position: "absolute",
-            top: "4%",      // posisikan sedikit turun
-            left: "30%",
-            width: "50%",
+            top: "2%",      
+            left: "20%",         // digeser sedikit biar muat 3 awan
+            width: "60%",        // diperlebar biar pas 3 item
             display: "flex",
-            justifyContent: "space-around", // bagi rata kiri-kanan
+            justifyContent: "space-around", 
             alignItems: "center",
             zIndex: 5,
           }}
         >
           {/* Awan 1 */}
           <a
-            href="https://e-sppt.kedirikab.go.id/"
+            href="https://bapenda.kedirikab.go.id/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ display: "block", width: "25%" }} // sama besar
+            style={{ display: "block", width: "25%" }}
           >
             <img
-              src="https://i.imgur.com/zau1B4G.png"
-              alt="Awan"
+              src="https://i.imgur.com/zndKcQV.png"
+              alt="Awan 1"
               style={{
                 width: "100%",
                 height: "auto",
@@ -75,11 +75,28 @@ export default function Home() {
             href="https://e-sppt.kedirikab.go.id/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ display: "block", width: "25%" }} // sama besar
+            style={{ display: "block", width: "25%" }}
           >
             <img
               src="https://i.imgur.com/UoWHl03.png"
-              alt="Awan"
+              alt="Awan 2"
+              style={{
+                width: "100%",
+                height: "auto",
+              }}
+            />
+          </a>
+
+          {/* Awan 3 */}
+          <a
+            href="https://e-layananpbb.kedirikab.go.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "block", width: "25%" }}
+          >
+            <img
+              src="https://i.imgur.com/h4s19i5.png"
+              alt="Awan 3"
               style={{
                 width: "100%",
                 height: "auto",
