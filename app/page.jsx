@@ -21,14 +21,14 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          maxWidth: "1600px", // biar gak terlalu melebar di layar besar
-          aspectRatio: "16 / 9", // kunci rasio
+          maxWidth: "1600px", // batas biar nggak terlalu melebar
+          aspectRatio: "16 / 9", // kunci rasio agar scaling seragam
           overflow: "hidden",
         }}
       >
         {/* Gambar Atas */}
         <img
-          src="https://i.imgur.com/JMXBkqg.png"
+          src="https://i.imgur.com/LtomLsy.png"
           alt="Gambar Atas"
           style={{
             position: "absolute",
@@ -39,6 +39,92 @@ export default function Home() {
             zIndex: 2,
           }}
         />
+
+                {/* Awan Group */}
+        <div
+          style={{
+            position: "absolute",
+            top: "4%",      // posisikan sedikit turun
+            left: "30%",
+            width: "50%",
+            display: "flex",
+            justifyContent: "space-around", // bagi rata kiri-kanan
+            alignItems: "center",
+            zIndex: 5,
+          }}
+        >
+          {/* Awan 1 + Panah kiri */}
+          <div style={{ position: "relative", width: "25%" }}>
+            {/* Panah animasi (arah ke kanan menuju awan) */}
+            <motion.div
+              style={{
+                position: "absolute",
+                left: "-25%",   // posisikan di kiri awan
+                top: "30%",
+                transform: "translateY(-50%)",
+                fontSize: "2rem",
+                color: "#6b21a8", // ungu biar sesuai tema
+                fontWeight: "bold",
+              }}
+              animate={{ x: [0, -10, 0] }}
+              transition={{ repeat: Infinity, duration: 1.0, ease: "easeInOut" }}
+            >
+              ➡️
+            </motion.div>
+
+            <a
+              href="https://e-sppt.kedirikab.go.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", width: "100%" }}
+            >
+              <img
+                src="https://i.imgur.com/zau1B4G.png"
+                alt="Awan"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+          </div>
+
+          {/* Awan 2 + Panah kanan */}
+          <div style={{ position: "relative", width: "25%" }}>
+            {/* Panah animasi (arah ke kiri menuju awan) */}
+            <motion.div
+              style={{
+                position: "absolute",
+                right: "-25%", // posisikan di kanan awan
+                top: "30%",
+                transform: "translateY(-50%)",
+                fontSize: "2rem",
+                color: "#6b21a8",
+                fontWeight: "bold",
+              }}
+              animate={{ x: [0, 10, 0] }}
+              transition={{ repeat: Infinity, duration: 1.0, ease: "easeInOut" }}
+            >
+              ⬅️
+            </motion.div>
+
+            <a
+              href="https://e-sppt.kedirikab.go.id/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", width: "100%" }}
+            >
+              <img
+                src="https://i.imgur.com/UoWHl03.png"
+                alt="Awan"
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+              />
+            </a>
+          </div>
+        </div>
 
         {/* Jalan Raya */}
         <svg
@@ -59,7 +145,7 @@ export default function Home() {
             <rect
               key={i}
               x={i * 240 + 40}
-              y={220} //320 - 12
+              y={220}
               width={160}
               height={12}
               fill="#e5e7eb"
@@ -76,8 +162,8 @@ export default function Home() {
             position: "absolute",
             bottom: "45%",
             left: 0,
-            width: "30%",       // sebelumnya 20%, diperbesar 120%
-            maxWidth: "240px",  // sebelumnya 200px, diperbesar 120%
+            width: "30%",
+            maxWidth: "240px",
             height: "auto",
             zIndex: 3,
           }}
@@ -103,8 +189,8 @@ export default function Home() {
             height: "auto",
             zIndex: 3,
           }}
-          initial={{ x: "100vw" }}   // mulai dari luar kanan layar
-          animate={{ x: "-100vw" }}  // bergerak sampai keluar penuh ke kiri
+          initial={{ x: "100vw" }}
+          animate={{ x: "-100vw" }}
           transition={{
             duration: 20,
             repeat: Infinity,
