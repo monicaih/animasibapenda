@@ -55,7 +55,7 @@ export default function Home() {
         >
           {/* Awan 1 */}
           <a
-            href="https://bapenda.kedirikab.go.id/"
+            href="https://bapenda.kedirikab.go.id/beranda"
             target="_blank"
             rel="noopener noreferrer"
             style={{ display: "block", width: "25%" }}
