@@ -40,7 +40,7 @@ export default function Home() {
           }}
         />
 
-                {/* Awan Group */}
+        {/* Awan Group */}
         <div
           style={{
             position: "absolute",
@@ -53,77 +53,39 @@ export default function Home() {
             zIndex: 5,
           }}
         >
-          {/* Awan 1 + Panah kiri */}
-          <div style={{ position: "relative", width: "25%" }}>
-            {/* Panah animasi (arah ke kanan menuju awan) */}
-            <motion.div
+          {/* Awan 1 */}
+          <a
+            href="https://e-sppt.kedirikab.go.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "block", width: "25%" }} // sama besar
+          >
+            <img
+              src="https://i.imgur.com/zau1B4G.png"
+              alt="Awan"
               style={{
-                position: "absolute",
-                left: "-25%",   // posisikan di kiri awan
-                top: "30%",
-                transform: "translateY(-50%)",
-                fontSize: "2rem",
-                color: "#6b21a8", // ungu biar sesuai tema
-                fontWeight: "bold",
+                width: "100%",
+                height: "auto",
               }}
-              animate={{ x: [0, -10, 0] }}
-              transition={{ repeat: Infinity, duration: 1.0, ease: "easeInOut" }}
-            >
-              ➡️
-            </motion.div>
+            />
+          </a>
 
-            <a
-              href="https://e-sppt.kedirikab.go.id/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ display: "block", width: "100%" }}
-            >
-              <img
-                src="https://i.imgur.com/zau1B4G.png"
-                alt="Awan"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
-            </a>
-          </div>
-
-          {/* Awan 2 + Panah kanan */}
-          <div style={{ position: "relative", width: "25%" }}>
-            {/* Panah animasi (arah ke kiri menuju awan) */}
-            <motion.div
+          {/* Awan 2 */}
+          <a
+            href="https://e-sppt.kedirikab.go.id/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ display: "block", width: "25%" }} // sama besar
+          >
+            <img
+              src="https://i.imgur.com/UoWHl03.png"
+              alt="Awan"
               style={{
-                position: "absolute",
-                right: "-25%", // posisikan di kanan awan
-                top: "30%",
-                transform: "translateY(-50%)",
-                fontSize: "2rem",
-                color: "#6b21a8",
-                fontWeight: "bold",
+                width: "100%",
+                height: "auto",
               }}
-              animate={{ x: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 1.0, ease: "easeInOut" }}
-            >
-              ⬅️
-            </motion.div>
-
-            <a
-              href="https://e-sppt.kedirikab.go.id/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ display: "block", width: "100%" }}
-            >
-              <img
-                src="https://i.imgur.com/UoWHl03.png"
-                alt="Awan"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                }}
-              />
-            </a>
-          </div>
+            />
+          </a>
         </div>
 
         {/* Jalan Raya */}
