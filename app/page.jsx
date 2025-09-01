@@ -135,7 +135,7 @@ export default function Home() {
 
         {/* Kendaraan 1 (Mobil) */}
         <motion.img
-          src="https://i.imgur.com/U11qDuh.png"
+          src="https://i.imgur.com/RSEHJG2.png"
           alt="Halomasbup"
           style={{
             position: "absolute",
