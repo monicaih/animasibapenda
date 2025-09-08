@@ -61,7 +61,7 @@ export default function Home() {
             style={{ display: "block", width: "25%" }}
           >
             <img
-              src="https://i.imgur.com/zndKcQV.png"
+              src="https://i.imgur.com/97iS5za.png"
               alt="Awan 1"
               style={{
                 width: "100%",
@@ -78,7 +78,7 @@ export default function Home() {
             style={{ display: "block", width: "25%" }}
           >
             <img
-              src="https://i.imgur.com/UoWHl03.png"
+              src="https://i.imgur.com/hvelv3i.png"
               alt="Awan 2"
               style={{
                 width: "100%",
@@ -95,7 +95,7 @@ export default function Home() {
             style={{ display: "block", width: "25%" }}
           >
             <img
-              src="https://i.imgur.com/h4s19i5.png"
+              src="https://i.imgur.com/A7PvSkp.png"
               alt="Awan 3"
               style={{
                 width: "100%",
