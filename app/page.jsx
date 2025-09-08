@@ -21,9 +21,9 @@ export default function Home() {
         style={{
           position: "relative",
           width: "100%",
-          maxWidth: "1600px", // batas biar nggak terlalu melebar
+          maxWidth: "1400px", // batas biar nggak terlalu melebar 1600
           aspectRatio: "16 / 9", // kunci rasio agar scaling seragam
-          overflow: "hidden",
+          overflowX: "hidden",
         }}
       >
         {/* Gambar Atas */}
